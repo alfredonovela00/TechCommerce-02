@@ -79,6 +79,25 @@ main {
     background-size: cover;
 }
 
+.bounce-in {
+    opacity: 0;
+    animation: bounceIn 1s ease forwards;
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    70% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
 
 
 
@@ -122,24 +141,24 @@ main {
         display: block;
     }
 
-    .main-btn{
+    .main-btn {
         text-align: center;
         margin-top: 50px;
     }
 
-    .main-btn a{
+    .main-btn a {
         color: white;
         text-decoration: none;
         font-weight: bold;
     }
 
-    button{
+    button {
         background: #4b4646;
         border: none;
         border-radius: 15px;
         padding: 10px;
         width: 200px;
     }
-   
-    
+
+
 }
